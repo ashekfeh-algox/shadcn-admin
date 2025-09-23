@@ -5,5 +5,5 @@ export function Home() {
     <Main>
       <div>Home</div>
     </Main>
-  )
+  );
 }

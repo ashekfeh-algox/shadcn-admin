@@ -1,7 +1,7 @@
 export type City = {
-  id: string
-  createdAt: string
-  updatedAt: string
-  name: string
-  slug: string
-}
+  id: string;
+  createdAt: string;
+  updatedAt: string;
+  name: string;
+  slug: string;
+};

@@ -8,8 +8,8 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "format:check": "prettier --check .",
-    "format": "prettier --write .",
+    "format": "biome format --write",
+    "check": "biome lint --write",
     "knip": "knip"
   },
   "dependencies": {
@@ -58,13 +58,13 @@
     "zustand": "^5.0.7"
   },
   "devDependencies": {
+    "@biomejs/biome": "2.2.4",
     "@eslint/js": "^9.33.0",
     "@faker-js/faker": "^9.9.0",
     "@tanstack/eslint-plugin-query": "^5.83.1",
     "@tanstack/react-query-devtools": "^5.85.3",
     "@tanstack/react-router-devtools": "^1.131.16",
     "@tanstack/router-plugin": "^1.131.16",
-    "@trivago/prettier-plugin-sort-imports": "^5.2.2",
     "@types/node": "^24.3.0",
     "@types/react": "^19.1.10",
     "@types/react-dom": "^19.1.7",
@@ -74,8 +74,6 @@
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.3.0",
     "knip": "^5.62.0",
-    "prettier": "^3.6.2",
-    "prettier-plugin-tailwindcss": "^0.6.14",
     "typescript": "~5.9.2",
     "typescript-eslint": "^8.39.1",
     "vite": "^7.1.2"
