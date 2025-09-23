@@ -1,16 +1,14 @@
-'use client'
-
-import { useState } from 'react'
-import { type Table } from '@tanstack/react-table'
-import { AlertTriangle } from 'lucide-react'
+import { Table } from '@tanstack/react-table'
 import { toast } from 'sonner'
 import { sleep } from '@/lib/utils'
+import { AlertTriangle } from 'lucide-react'
+import { ConfirmDialog } from '@/components/confirm-dialog'
+import { Label } from '@/components/ui/label'
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert'
 import { Input } from '@/components/ui/input'
-import { Label } from '@/components/ui/label'
-import { ConfirmDialog } from '@/components/confirm-dialog'
+import { useState } from 'react'
 
-type TaskMultiDeleteDialogProps<TData> = {
+type CityMultiDeleteDialog<TData> = {
   open: boolean
   onOpenChange: (open: boolean) => void
   table: Table<TData>
@@ -18,11 +16,11 @@ type TaskMultiDeleteDialogProps<TData> = {
 
 const CONFIRM_WORD = 'DELETE'
 
-export function TasksMultiDeleteDialog<TData>({
+export function CitiesMultiDeleteDialog<TData>({
   open,
   onOpenChange,
   table,
-}: TaskMultiDeleteDialogProps<TData>) {
+}: CityMultiDeleteDialog<TData>) {
   const [value, setValue] = useState('')
 
   const selectedRows = table.getFilteredSelectedRowModel().rows

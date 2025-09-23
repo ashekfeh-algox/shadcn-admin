@@ -26,11 +26,6 @@ const sidebarNavItems = [
     icon: <Palette size={18} />,
   },
   {
-    title: 'Notifications',
-    href: '/settings/notifications',
-    icon: <Bell size={18} />,
-  },
-  {
     title: 'Display',
     href: '/settings/display',
     icon: <Monitor size={18} />,
