@@ -1,16 +1,16 @@
+import { QueryCache, QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { createRouter, RouterProvider } from "@tanstack/react-router";
+import { AxiosError } from "axios";
 import { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
-import { AxiosError } from "axios";
-import { QueryCache, QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { RouterProvider, createRouter } from "@tanstack/react-router";
 import { toast } from "sonner";
-import { useAuthStore } from "@/stores/auth-store";
 import { handleServerError } from "@/lib/handle-server-error";
-import { DirectionProvider } from "./context/direction-provider";
-import { FontProvider } from "./context/font-provider";
-import { ThemeProvider } from "./context/theme-provider";
+import { useAuthStore } from "@/stores/auth-store";
 // Generated Routes
 import { routeTree } from "./routeTree.gen";
+import { DirectionProvider } from "./settings/context/direction-provider";
+import { FontProvider } from "./settings/context/font-provider";
+import { ThemeProvider } from "./theme/theme-provider";
 // Styles
 import "./styles/index.css";
 
@@ -78,7 +78,8 @@ declare module "@tanstack/react-router" {
 }
 
 // Render the app
-const rootElement = document.getElementById("root")!;
+const rootElement = document.getElementById("root");
+if (rootElement === null) throw new Error("No root ");
 if (!rootElement.innerHTML) {
   const root = ReactDOM.createRoot(rootElement);
   root.render(

@@ -1,14 +1,14 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { ConfigDrawer } from "@/components/config-drawer";
-import { Header } from "@/components/layout/header";
+import { Search } from "@/components/command/search";
 import { ProfileDropdown } from "@/components/profile-dropdown";
-import { Search } from "@/components/search";
-import { ThemeSwitch } from "@/components/theme-switch";
 import { ForbiddenError } from "@/features/errors/forbidden";
 import { GeneralError } from "@/features/errors/general-error";
 import { MaintenanceError } from "@/features/errors/maintenance-error";
 import { NotFoundError } from "@/features/errors/not-found-error";
 import { UnauthorisedError } from "@/features/errors/unauthorized-error";
+import { Header } from "@/layout/header";
+import { SettingDrawer } from "@/settings";
+import { ThemeSwitch } from "@/theme/theme-switch";
 
 export const Route = createFileRoute("/_authenticated/errors/$error")({
   component: RouteComponent,
@@ -32,7 +32,7 @@ function RouteComponent() {
         <Search />
         <div className="ms-auto flex items-center space-x-4">
           <ThemeSwitch />
-          <ConfigDrawer />
+          <SettingDrawer />
           <ProfileDropdown />
         </div>
       </Header>

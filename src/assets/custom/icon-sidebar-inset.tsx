@@ -3,6 +3,7 @@ import type { SVGProps } from "react";
 export function IconSidebarInset(props: SVGProps<SVGSVGElement>) {
   return (
     <svg data-name="icon-sidebar-inset" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 79.86 51.14" {...props}>
+      <title>IconSidebarInset</title>
       <rect
         x={23.39}
         y={5.57}

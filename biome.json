@@ -36,7 +36,7 @@
   "assist": { "actions": { "source": { "organizeImports": "on" } } },
   "linter": {
     "enabled": true,
-    "includes": ["**/*.{js,jsx,ts,tsx}", "!**/ui/src/components/*.tsx"],
+    "includes": ["**/*.{js,jsx,ts,tsx}", "!**/src/components/ui/*.tsx"],
     "rules": {
       "recommended": true,
       "correctness": {

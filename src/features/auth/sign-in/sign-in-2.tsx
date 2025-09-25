@@ -1,4 +1,3 @@
-import { Logo } from "@/assets/logo";
 import { cn } from "@/lib/utils";
 import dashboardDark from "./assets/dashboard-dark.png";
 import dashboardLight from "./assets/dashboard-light.png";
@@ -10,7 +9,7 @@ export function SignIn2() {
       <div className="lg:p-8">
         <div className="mx-auto flex w-full flex-col justify-center space-y-2 py-8 sm:w-[480px] sm:p-8">
           <div className="mb-4 flex items-center justify-center">
-            <Logo className="me-2" />
+            {/* TODO: Add Logo */}
             <h1 className="font-medium text-xl">Shadcn Admin</h1>
           </div>
         </div>

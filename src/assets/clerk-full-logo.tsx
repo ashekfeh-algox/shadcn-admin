@@ -17,13 +17,7 @@ export function ClerkFullLogo(props: SVGProps<SVGSVGElement>) {
         fill="#1F0256"
       />
       <defs>
-        <linearGradient
-          x1={16.4087}
-          y1={-1.75881}
-          x2={-7.88473}
-          y2={22.5365}
-          gradientUnits="userSpaceOnUse"
-        >
+        <linearGradient x1={16.4087} y1={-1.75881} x2={-7.88473} y2={22.5365} gradientUnits="userSpaceOnUse">
           <stop stopColor="#17CCFC" />
           <stop offset={0.5} stopColor="#5D31FF" />
           <stop offset={1} stopColor="#F35AFF" />

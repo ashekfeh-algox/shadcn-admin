@@ -2,6 +2,7 @@
  * Cookie utility functions using manual document.cookie approach
  * Replaces js-cookie dependency for better consistency
  */
+/** biome-ignore-all lint/suspicious/noDocumentCookie: it's about cookie */
 
 const DEFAULT_MAX_AGE = 60 * 60 * 24 * 7; // 7 days
 
