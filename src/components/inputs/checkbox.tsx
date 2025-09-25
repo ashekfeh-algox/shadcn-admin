@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
-import { Label } from "../ui/label";
 import { Checkbox } from "../ui/checkbox";
+import { Label } from "../ui/label";
 
 export type XCheckboxProps = {
   label: string;
